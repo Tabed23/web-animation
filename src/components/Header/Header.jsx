@@ -2,21 +2,23 @@ import React, { useState } from "react";
 import logo from '../../assets/images/NJ.svg';
 import './Header.css';
 import Cursor from "react-special-cursor";
+import { Link } from 'react-router-dom'
 
 const Header = () => {
   const [work, setwork] = useState(false);
   const [about, setabout] = useState(false);
   const [play, setplay] = useState(false);
 
-  
+    
 
   return (
     <>
-      <nav className="navbar navbar-expand-lg">
+    
+      <nav className="navbar navbar-expand-lg" id="nav">
       <div className="container-fluid">
-        <a className="navbar-brand" href="#">
+        <Link className="navbar-brand" to={'/'}>
           <img src={logo} alt="" />
-        </a>
+        </Link>
         <button
           className="navbar-toggler"
           type="button"
@@ -39,9 +41,9 @@ const Header = () => {
               </a>
             </li>
             <li className="nav-item " onMouseOver={()=> setabout(!about)} onMouseOut={()=> setabout(!about)}>
-              <a className="nav-link head" href="#">
+              <Link className="nav-link head" to={"/about"}>
                 ABOUT
-              </a>
+              </Link>
             </li>
             <li className="nav-item " onMouseOver={()=> setplay(!play)} onMouseOut={()=> setplay(!play)}>
               <a className="nav-link head" href="#">
@@ -94,7 +96,7 @@ const Header = () => {
           <span>Play&nbsp;</span>
         </div>:''
         }
-        
+       
     </>
     
   );

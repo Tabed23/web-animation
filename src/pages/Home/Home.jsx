@@ -35,6 +35,7 @@ const Home = () => {
         }
         
     }
+    
   return (
     <>
     <Cursor color="orange" hoverClasses={[

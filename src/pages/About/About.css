@@ -1,0 +1,228 @@
+.aboutHeader nav{
+    background-color: #000;
+}
+
+.aboutHeader .navbar-brand img {
+    filter: invert(0);
+  }
+
+  .aboutHeader .nav-link{
+    filter: invert(1);
+  }
+
+  .aboutHeader .nav-link:hover{
+    filter: invert(0);
+  }
+.about-intro{
+    background-color: #000;
+    color: #fff;
+    padding: 264px 0;
+}
+.about-intro .container {
+    max-width: 1560px;
+}
+.about-intro p{
+    color: #FFF;
+    font-kerning: none;
+    font-feature-settings: 'liga' off;
+    font-family: Manrope;
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140.5%; /* 89.92px */
+    margin-bottom: 55px;
+}
+
+.about-intro p em{
+    font-weight: 200;
+}
+
+.about-intro a{
+    color: #E5C1FB;
+    font-kerning: none;
+    font-feature-settings: 'liga' off;
+    font-family: Manrope;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 160%; /* 51.2px */
+    padding: 15px 27px;
+    border: 1px solid #E5C1FB;
+    margin-bottom: 193px;
+    display: block;
+    max-width: 226px;
+}
+
+.about-border-text{
+    padding: 60px 0;
+    border-top: 1px solid #fff;
+    border-bottom: 1px solid #fff;
+    display: flex; 
+
+    justify-content: center;
+    gap: 50px;
+}
+
+.about-border-text p{
+    color: #FFF;
+    font-kerning: none;
+    font-feature-settings: 'liga' off;
+    font-family: Manrope;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 139.023%; /* 44.487px */
+    margin: 0;
+   
+}
+
+
+.about-animted-header{
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+    padding-bottom: 322px;
+
+}
+.about-animted-header span{
+    display: block;
+    color: #FFF;
+    font-kerning: none;
+    font-feature-settings: 'liga' off;
+    font-family: Manrope;
+    font-size: 96px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 160%; /* 153.6px */
+}
+
+.about-animted-header span{
+    transition: all 0.5s ease-in-out;
+}
+
+.about-details{
+    background-color: #000;
+    color: #fff;
+    padding-bottom: 223px;
+}
+
+.animated-detail-text span{
+    position: relative;
+    color: grey;
+    overflow: hidden;
+    background: linear-gradient(to right, white, white 50%, grey 50%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-size: 200% 100%;
+    background-position: 100%;
+    transition: background-position 3s ease;
+    font-kerning: none;
+    font-feature-settings: 'liga' off;
+    font-family: Manrope;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140.5%; /* 44.96px */
+    max-width: 453px;
+    margin: 0 auto;
+    display: block;
+}
+
+.about-detail-animation{
+    display: flex;
+    justify-content: center;
+}
+
+.animated-detail-text {
+    position: sticky;
+    top: 0;
+    height: 286px;
+}
+
+
+
+.about-detail-tile {
+    padding: 0 52px;
+  }
+
+.about-detail-tiles {
+    min-height: 2300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+
+.about-detail-tiles.second-tiles-col{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+@media only screen and (max-width: 1440px){
+    .about-intro .container {
+        max-width: 1250px;
+    }
+}
+
+@media only screen and (max-width: 900px){
+    .about-animted-header span{
+        transform: none !important;
+        
+    }
+
+    .animated-detail-text span {
+        max-width: 80%;
+    }
+
+    .about-detail-tile {
+        padding: 0px 118px;
+      }
+      .about-detail-tiles {
+        min-height: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        gap: 50px;
+
+      }
+
+      .about-detail-tiles.second-tiles-col {
+        padding: 50px 0 0 0;
+        min-height: auto;
+      }
+}
+
+
+@media only screen and (max-width: 767px){
+    .about-intro {
+        padding: 50px 0 50px;
+      }
+      .about-intro p {
+        font-size: 30px;
+      }
+      .about-intro a {
+        font-size: 18px;
+        max-width: 150px;
+      }
+      .about-border-text {
+        flex-direction: column;
+      }
+      .about-animted-header span {
+        font-size: 50px;
+      }
+      .about-animted-header {
+        padding-bottom: 50px;
+      }
+      .animated-detail-text {
+        position: static;
+        height: auto;
+      }
+      .animated-detail-text span{
+        font-size: 24px;
+      }
+      .about-detail-tile {
+        padding: 0;
+      }
+}
