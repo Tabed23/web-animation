@@ -1,51 +1,51 @@
 import React from 'react'
 import './About.css'
+import { useLocation} from 'react-router-dom'
 
 import asset1 from '../../assets/images/detailtile1.svg'
 import asset2 from '../../assets/images/detailtile2.svg'
 import asset3 from '../../assets/images/detailtile3.svg'
 
 const About = () => {
+    // window.onscroll = () => {
+        
+    //     var scrolltop  = window.pageYOffset || document.documentElement.scrollTop
+    //     const item =  document.getElementById('first-span')
+    //     const item2 =  document.getElementById('last-span')
+    //     const item3 =  document.getElementById('first-text-span')
+    //     const item4 =  document.getElementById('second-text-span')
+    //     const item5 =  document.getElementById('third-text-span')
+    //     // var w = window.innerWidth;
+    //     var temp  = scrolltop
+    //     if(scrolltop > 518){
+    //         item.style.transform = 'translatex(-20%)' ;
+    //         item2.style.transform = 'translatex(20%)' ;
+    //     }
+    //     else{
+    //         item.style.transform = 'unset' ;
+    //         item2.style.transform = 'unset' ;
 
-    window.onscroll = () => {
-        var scrolltop  = window.pageYOffset || document.documentElement.scrollTop
-        const item =  document.getElementById('first-span')
-        const item2 =  document.getElementById('last-span')
-        const item3 =  document.getElementById('first-text-span')
-        const item4 =  document.getElementById('second-text-span')
-        const item5 =  document.getElementById('third-text-span')
-        // var w = window.innerWidth;
-        var temp  = scrolltop
-        console.log(scrolltop)
-        if(scrolltop > 518){
-            item.style.transform = 'translatex(-20%)' ;
-            item2.style.transform = 'translatex(20%)' ;
-        }
-        else{
-            item.style.transform = 'unset' ;
-            item2.style.transform = 'unset' ;
+    //     }
 
-        }
+    //     if(scrolltop > 1100 && scrolltop < 2000){
+    //         item3.style.backgroundPosition = '0 100%' ;
+    //         item4.style.backgroundPosition = '100%' ;
+    //         item5.style.backgroundPosition = '100%' ;
 
-        if(scrolltop > 1100 && scrolltop < 2000){
-            item3.style.backgroundPosition = '0 100%' ;
-            item4.style.backgroundPosition = '100%' ;
-            item5.style.backgroundPosition = '100%' ;
-
-        }else if (scrolltop > 2000 && scrolltop < 2500){
-            item3.style.backgroundPosition = '100%' ;
-            item4.style.backgroundPosition = '0 100%' ;
-            item5.style.backgroundPosition = '100%' ;
-        }
-        else if (scrolltop > 2500){
-            item3.style.backgroundPosition = '100%' ;
-            item4.style.backgroundPosition = '100%' ;
-            item5.style.backgroundPosition = '0 100%' ;
-        }
+    //     }else if (scrolltop > 2000 && scrolltop < 2500){
+    //         item3.style.backgroundPosition = '100%' ;
+    //         item4.style.backgroundPosition = '0 100%' ;
+    //         item5.style.backgroundPosition = '100%' ;
+    //     }
+    //     else if (scrolltop > 2500){
+    //         item3.style.backgroundPosition = '100%' ;
+    //         item4.style.backgroundPosition = '100%' ;
+    //         item5.style.backgroundPosition = '0 100%' ;
+    //     }
+    
         
         
-        
-    }
+    // }
     
   return (
     <>

@@ -46,9 +46,9 @@ const Header = () => {
               </Link>
             </li>
             <li className="nav-item " onMouseOver={()=> setplay(!play)} onMouseOut={()=> setplay(!play)}>
-              <a className="nav-link head" href="#">
+              <Link className="nav-link head" to={"/play"}>
                 PLAY
-              </a>
+              </Link>
             </li>
           </ul>
         </div>
