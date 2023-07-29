@@ -1,0 +1,476 @@
+.gpt-intro-text{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* align-items: center; */
+    margin-top: -67px;
+    color: #fff;
+}
+
+.gpt-intro-text span{
+    color: #FFF;
+    font-kerning: none;
+    font-feature-settings: 'liga' off;
+    font-family: Manrope;
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 160.023%; /* 102.415px */
+    margin-bottom: 79px;
+}
+
+
+.gpt-intro{
+    background: #74AA9C; 
+    background-size: cover;
+}
+
+.gpt-intro-text ul{
+    padding: 0;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    color: #FFF;
+    font-kerning: none;
+    font-feature-settings: 'liga' off;
+    font-family: Manrope;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 160.023%; /* 35.205px */
+}
+
+.gpt-intro svg{
+    margin-right: 14px;
+    margin-bottom: 42px;
+}
+
+
+.gpt-intro-light{
+    font-weight: 500;
+}
+
+
+
+.gpt-sec{
+    padding: 148px 0;   
+   }
+   .gpt-sec h2{
+       color:  #252323;
+       font-kerning: none;
+       font-feature-settings: 'liga' off;
+       font-family: Manrope;
+       font-size: 64px;
+       font-style: normal;
+       font-weight: 600;
+       line-height: 160%; /* 102.4px */
+      }
+   
+      .gpt-sec p{
+       color: var(--black, #252323);
+       font-kerning: none;
+       font-feature-settings: 'liga' off;
+   
+       /* Header 3 (32px) */
+       font-family: Manrope;
+       font-size: 32px;
+       font-style: normal;
+       font-weight: 500;
+       line-height: 160.023%;
+       margin: 0;
+      }
+   
+      .gpt-sec p span{
+        color: #007F84; 
+      }
+   
+
+
+      
+    .gpt-research{
+        padding: 278px 0;
+    }
+    .gpt-research h2{
+        color: #000;
+        font-kerning: none;
+        font-feature-settings: 'liga' off;
+        font-family: Manrope;
+        font-size: 64px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 160%; /* 102.4px */
+    }
+
+    .gpt-research  .res-preheader{
+        color: #007F84;
+        font-kerning: none;
+        font-feature-settings: 'liga' off;
+        font-family: Manrope;
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 160%; /* 38.4px */
+        letter-spacing: 3.36px;
+    }
+
+
+    .gpt-research h3{
+        color: #000;
+        font-kerning: none;
+        font-feature-settings: 'liga' off;
+        font-family: Manrope;
+        font-size: 50px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 101%; /* 50.5px */
+    }
+
+    .gpt-research p{
+        color: var(--black, #252323);
+        font-kerning: none;
+        font-feature-settings: 'liga' off;
+
+        /* Header 3 (32px) */
+        font-family: Manrope;
+        font-size: 32px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 160.023%; /* 51.207px */
+        margin-bottom: 178px;
+    }
+
+    .gpt-research p span{
+        color: #007F84;
+        font-kerning: none;
+        font-feature-settings: 'liga' off;
+        font-size: 32px;
+        font-style: italic;
+        font-weight: 600;
+        line-height: 160.023%;
+        
+    }
+
+    .gpt-research ul{
+        list-style: decimal;
+        padding:  0 0 0 30px;
+    }
+
+    .gpt-research ul li{
+        color: var(--black, #252323);
+        font-kerning: none;
+        font-feature-settings: 'liga' off;
+        
+        /* Header 3 (32px) */
+        font-family: Manrope;
+        font-size: 32px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 160.023%; /* 51.207px */
+    }
+
+    .gpt-craft{
+        padding: 198px 252px;
+        background: rgba(48, 50, 68, 0.06); 
+    }
+
+    .gpt-craft p{
+        color: #000;
+        text-align: center;
+        font-kerning: none;
+        font-feature-settings: 'liga' off;
+        font-size: 64px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 160%; /* 102.4px */
+        margin-bottom: 0;
+    }
+
+    .gpt-craft p span{
+        color: #4C9F8A;
+        font-kerning: none;
+        font-feature-settings: 'liga' off;
+        font-size: 64px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 160%;
+        font-style: italic;
+    }
+
+
+    
+    .gpt-imp .container{
+        max-width: 80%;
+        background: #F3F3F4; 
+        padding: 104px 6%;
+        text-align: center;
+    }
+
+    .gpt-imp span{
+        color: #007F84;
+        font-kerning: none;
+        font-feature-settings: 'liga' off;
+        font-family: Manrope;
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 160.023%; /* 38.405px */
+        letter-spacing: 3.36px;
+    }
+
+    .gpt-imp p{
+        color: #303244;
+        font-kerning: none;
+        font-feature-settings: 'liga' off;
+        font-family: Manrope;
+        font-size: 40px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 160.023%;
+        margin-bottom: 0;
+    }
+
+
+
+    
+    .gpt-fewproblems{
+        padding: 225px 0;
+    }
+
+    .gpt-fewproblems h2{
+        color: #000;
+        font-kerning: none;
+        font-feature-settings: 'liga' off;
+        font-family: Manrope;
+        font-size: 64px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 160%; /* 102.4px */
+    }
+
+    .gpt-fewproblems .prob-h3-txt {
+        display: flex;
+        align-items: center;
+    }
+
+
+    .gpt-fewproblems .prob-h3-txt h3{
+        color: #000;
+        font-kerning: none;
+        font-feature-settings: 'liga' off;
+        font-family: Manrope;
+        font-size: 45px;
+        font-style: normal;
+        font-weight: 600;
+        padding: 10px 0 0 0;
+
+    }
+
+    .gpt-fewproblems .problem-tile:nth-child(3) h3{
+        margin-right: -27px;
+    }
+
+
+
+    .gpt-fewproblems .prob-h3-txt span{
+        color: #000;
+        font-kerning: none;
+        font-feature-settings: 'liga' off;
+        font-family: Manrope;
+        font-size: 125px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 160.023%; /* 200.028px */
+    }
+
+    .problem-tile{
+        margin-bottom: 123px;
+    }
+
+    .problem-tile:last-child{
+        margin-bottom: 0px;
+    }
+
+
+    .problem-tile > p{
+        color: #000;
+        font-kerning: none;
+        font-feature-settings: 'liga' off;
+
+        /* Header 3 (32px) */
+        font-family: Manrope;
+        font-size: 32px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 160.023%; /* 51.207px */
+        margin-top: -19px;
+    }
+
+    .problem-design{
+        padding: 23px 28px;
+        background: rgba(0, 127, 132, 0.10); 
+    }
+    .problem-design em{
+        color: #007F84;
+        font-kerning: none;
+        font-feature-settings: 'liga' off;
+        font-size: 20px;
+        font-weight: 500;
+        line-height: 160.023%; /* 32.005px */
+    }
+
+
+    .problem-design p{
+        color: #007F84;
+        font-kerning: none;
+        font-feature-settings: 'liga' off;
+        font-family: Manrope;
+        font-size: 32px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 134%; /* 42.88px */
+        margin: 0;
+    }
+
+.few-problems > p {
+    color: #000;
+    font-kerning: none;
+    font-feature-settings: 'liga' off;
+    /* Header 3 (32px) */
+    font-family: Manrope;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 160.023%; /* 51.207px */
+}
+
+
+
+
+.gpt-architect{
+    padding: 135px 0;
+    background-color: #000;
+}
+
+.gpt-architect span{
+    color: #26C4CA;
+    font-kerning: none;
+    font-feature-settings: 'liga' off;
+    font-family: Manrope;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 160%; /* 38.4px */
+    letter-spacing: 3.36px;
+}
+
+.gpt-architect h2{
+    color: #FFF;
+    font-kerning: none;
+    font-feature-settings: 'liga' off;
+    font-family: Manrope;
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 124.5%; /* 79.68px */
+    margin-bottom: 24px;
+}
+
+.gpt-architect .img{
+    margin-bottom: 139px;
+}
+
+.gpt-architect .post-img{
+    color: #14CED6;
+    text-align: center;
+    font-kerning: none;
+    font-feature-settings: 'liga' off;
+
+    /* Header 3 (32px) */
+    font-family: Manrope;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 160.023%; /* 51.207px */
+    display: block;
+    margin-bottom: 101px;
+}
+
+.gpt-architect p{
+    color: var(--black, #252323);
+    font-kerning: none;
+    font-feature-settings: 'liga' off;
+
+    /* Header 3 (32px) */
+    font-family: Manrope;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 160.023%; /* 51.207px */
+    padding: 31px 117px;
+    background: #B6B8BF; 
+    margin-bottom: 90px;
+}
+
+
+.gpt-architect.second-architect{
+    background-color: #fff;
+}
+
+
+.gpt-architect.second-architect h2{
+    color: #000;
+}
+.gpt-architect.second-architect p{
+    color: #000;
+    color: var(--black, #252323);
+    font-kerning: none;
+    font-feature-settings: 'liga' off;
+    /* Header 3 (32px) */
+    font-family: Manrope;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 160.023%; /* 51.207px */
+    margin-bottom: 103px;
+    padding: 0;
+    background-color: transparent;
+}
+
+
+.gpt-architect.second-architect .container > ul{
+    padding: 0 0 0 32px;
+    list-style: decimal;
+}
+.gpt-architect.second-architect .container > ul > li{
+    color: var(--black, #252323);
+    font-kerning: none;
+    font-feature-settings: 'liga' off;
+    /* Header 3 (32px) */
+    font-family: Manrope;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 160.023%; /* 51.207px */
+    margin-bottom: 47px;
+}
+.gpt-architect.second-architect ul ul{
+    padding: 0;
+    list-style: disc;
+}
+
+.gpt-architect.second-architect ul ul li{
+    padding: 0;
+    list-style: disc;
+    margin: 0;
+}
+
+.gpt-architect.second-architect.srchblack{
+    background-color: #000;
+    color: #fff;
+}
+
+.gpt-architect.second-architect.srchblack h2{
+    color: #fff;
+}

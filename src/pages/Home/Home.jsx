@@ -5,6 +5,7 @@ import home2 from '../../assets/images/home-work-1.svg';
 import home3 from '../../assets/images/home-work-2.svg';
 import home4 from '../../assets/images/home-work-3.svg';
 import Cursor from "react-special-cursor";
+import { Link } from 'react-router-dom'
 
 const Home = () => {
     const welcome = (
@@ -12,29 +13,29 @@ const Home = () => {
           view
         </h3>
       );
-    window.onscroll = () => {
-        var scrolltop  = window.pageYOffset || document.documentElement.scrollTop
-        const item =  document.getElementById('anime-img')
-        var w = window.innerWidth;
-        var temp  = scrolltop
-        if( w > 1440){
-            if(scrolltop < 899){
-                item.style.transform = 'translateY(' + temp + 'px)' ;
-            }
-        }
-        else if(w <= 1440 && w >= 900){
-            if(scrolltop < 780){
-                item.style.transform = 'translateY(' + temp + 'px)' ;
-            }
-        }
+    // window.onscroll = () => {
+    //     var scrolltop  = window.pageYOffset || document.documentElement.scrollTop
+    //     const item =  document.getElementById('anime-img')
+    //     var w = window.innerWidth;
+    //     var temp  = scrolltop
+    //     if( w > 1440){
+    //         if(scrolltop < 899){
+    //             item.style.transform = 'translateY(' + temp + 'px)' ;
+    //         }
+    //     }
+    //     else if(w <= 1440 && w >= 900){
+    //         if(scrolltop < 780){
+    //             item.style.transform = 'translateY(' + temp + 'px)' ;
+    //         }
+    //     }
 
-        else if(w <= 900 && w >=375){
-            if(scrolltop < 780){
-                item.style.transform = 'translateY(' + temp + 'px)' ;
-            }
-        }
+    //     else if(w <= 900 && w >=375){
+    //         if(scrolltop < 780){
+    //             item.style.transform = 'translateY(' + temp + 'px)' ;
+    //         }
+    //     }
         
-    }
+    // }
     
   return (
     <>
@@ -78,22 +79,22 @@ const Home = () => {
                     <div className="col-lg-8">
                         <div className="pages">
                             <div className="page-tile govendapagetile">
-                                <a href="#" className='children'>
+                                <Link to={'/govenda'} className='children'>
                                     <div className="page-poster">
                                         <img src={home2} alt="" />
                                     </div>
-                                </a>
+                                </Link>
                                 <p className='page-pre-head'>Product Designer</p>
                                 <h3>Govenda Committee Suite</h3>
                                 <p className='page-para'>Led design for a new product, including product strategy, defining metrics and objectives, producing interactions and prototyping.</p>
                                 <a className='btn' href="#">EXPERIENCE DESIGN</a>
                             </div>
                             <div className="page-tile gptpagetile">
-                                <a href="#">
+                                <Link to={'/gpt'}>
                                     <div className="page-poster">
                                         <img src={home3} alt="" />
                                     </div>
-                                </a>
+                                </Link>
                                 <p className='page-pre-head'>Visual Designer</p>
                                 <h3>ChatGPT Reimagined</h3>
                                 <p className='page-para'>Crafting an experience that is intuitive, beautiful, and engaging to help people have better interactions with AI.</p>
@@ -104,11 +105,11 @@ const Home = () => {
                                 </div>
                             </div>
                             <div className="page-tile davispagetile">
-                                <a href="#">
+                                <Link to={'/davis'}>
                                     <div className="page-poster">
                                         <img src={home4} alt="" />
                                     </div>
-                                </a>
+                                </Link>
                                 <p className='page-pre-head'>UX Designer</p>
                                 <h3>Davis Housing</h3>
                                 <p className='page-para'>Designing the next generation search bar to drive product growth for a local consumer-facing service</p>
