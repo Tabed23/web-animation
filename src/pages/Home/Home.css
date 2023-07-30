@@ -53,6 +53,8 @@
     height:  calc(100vh - 67px);
     background-image: url('../../assets/images/home2.png');
     position: relative;
+    background-size: 120%;
+    background-position-x: 100%;
 }
 
 .home-work{
@@ -70,7 +72,7 @@
     background-color: #000;
 }
 .home-work h2{
-    color: #FFF;
+    color: #fff;
     font-kerning: none;
     font-feature-settings: 'liga' off;
     font-family: Manrope;

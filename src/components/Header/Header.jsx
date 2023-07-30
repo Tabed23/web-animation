@@ -1,15 +1,16 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import logo from '../../assets/images/NJ.svg';
 import './Header.css';
-import Cursor from "react-special-cursor";
 import { Link } from 'react-router-dom'
 
-const Header = () => {
+
+const Header = (props) => {
   const [work, setwork] = useState(false);
   const [about, setabout] = useState(false);
   const [play, setplay] = useState(false);
 
-    
+  const navlinkEnter = () => props.setCursorVar("navlink");
+  const navLinkLeave = () => props.setCursorVar("default");
 
   return (
     <>
@@ -30,32 +31,29 @@ const Header = () => {
         >
           <span className="navbar-toggler-icon"></span>
         </button>
-        <Cursor color="orange" hoverClasses={[
-            { classNameOfTargetElement: "head", classNameOfStyle: "head-hover" }
-          ]}>
+        
         <div className="collapse navbar-collapse" id="navbarNav">
           <ul className="navbar-nav">
-            <li className="nav-item " onMouseOver={()=> setwork(!work)} onMouseOut={()=> setwork(!work)}>
-              <a className="nav-link head" aria-current="page" href="#">
+            <li className="nav-item"  onMouseOver={()=> setwork(!work)} onMouseOut={()=> setwork(!work)}>
+              <a className="nav-link" aria-current="page" href="/" onMouseEnter={navlinkEnter} onMouseLeave={navLinkLeave}>
                 WORK
               </a>
             </li>
-            <li className="nav-item " onMouseOver={()=> setabout(!about)} onMouseOut={()=> setabout(!about)}>
-              <Link className="nav-link head" to={"/about"}>
+            <li className="nav-item" onMouseOver={()=> setabout(!about)} onMouseOut={()=> setabout(!about)}>
+              <Link className="nav-link" to={"/about"} onMouseEnter={navlinkEnter} onMouseLeave={navLinkLeave}>
                 ABOUT
               </Link>
             </li>
             <li className="nav-item " onMouseOver={()=> setplay(!play)} onMouseOut={()=> setplay(!play)}>
-              <Link className="nav-link head" to={"/play"}>
+              <Link className="nav-link" to={"/play"} onMouseEnter={navlinkEnter} onMouseLeave={navLinkLeave}>
                 PLAY
               </Link>
             </li>
           </ul>
         </div>
-        </Cursor>
+        
       </div>
       </nav>
-      
       {
         work ? 
         <div class="marquee home-marquee" >

@@ -26,6 +26,8 @@ import gov18 from '../../assets/images/focus11.svg'
 import gov20 from '../../assets/images/takeaway.svg'
 
 const doSpeicalThing = () =>{
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+
     var element  = document.querySelector('.gov-persona .react-multi-carousel-track');
     const values = element.style.transform.split(/\w+\(|\);?/);
     const transform = values[1].split(/,\s?/g).map(parseInt);
@@ -39,7 +41,6 @@ const doSpeicalThing = () =>{
 }
 
 const Govenda = () => {
-    window.scrollTo({ top: 0, behavior: 'smooth' });
 
     const responsive = {
         superLargeDesktop: {

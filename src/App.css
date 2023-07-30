@@ -10,59 +10,6 @@ a{
 }
 
 
-.cursor-dot {
-    background-color: black !important;
-    width: 30px !important;
-    height: 30px !important;
-    mix-blend-mode: difference;
-    z-index: -1;
-    border: 0 !important;
-
-}
-
- .cursor-border{
-    border: none !important;
-}
-
-.head-hover .cursor-dot {
-    width: 50px !important; 
-    height: 50px !important;
-    background-color: rgb(1, 66, 1) !important;
-    z-index: -9999 !important;
-    /* mix-blend-mode: difference; */
-
-    
-}
-
-.head:hover {
-    mix-blend-mode: difference;
-    color: white !important;
-    position: relative;
-    z-index: 9999;
-}
-
-.para-hover .cursor-dot {
-    background-blend-mode: difference;
-    background-color: rgb(1, 66, 1) !important;
-}
-
-.para:hover{
-    z-index: 1001 !important;
-}
-
-.cursor-view{
-    /* background-color: black !important; */
-    color: white;
-    font-size: 12px;
-    margin: 0;
-}
-
-.children-hover .cursor-dot{
-  background-color: black;
-    
-}
-
-
 .footer {
     background: #EAEAEA; 
     padding: 50px 0;
@@ -114,3 +61,26 @@ a{
     line-height: 160%; /* 51.2px */
 }
 
+.cursor{
+    background-color: darkgreen;
+    height: 32px;
+    width: 32px;
+    border-radius: 50%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    mix-blend-mode: difference;
+    pointer-events: none;
+    font-size: 0;
+    color: #e9c9fc;
+    text-align: center;
+}
+
+
+
+@media only screen and (max-width: 767px){
+    .footer ul a {
+        font-size: 28px;
+    }
+}
