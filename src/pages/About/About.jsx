@@ -1,6 +1,8 @@
 import React from 'react'
 import './About.css'
 import { useLocation} from 'react-router-dom'
+import { Parallax, ParallaxBanner, ParallaxBannerLayer } from 'react-scroll-parallax';
+import { ScrollText } from "../Scrolltext/ScrollText";
 
 import asset1 from '../../assets/images/detailtile1.svg'
 import asset2 from '../../assets/images/detailtile2.svg'
@@ -46,7 +48,12 @@ const About = () => {
         
         
     // }
-    
+    const content = [
+        "ui/ux design, figma, interaction design,",
+        "visual strategy, adobe suite, sketch, prototyping, ",
+        "user research and testing, iterative design process"
+      ];
+      
   return (
     <>
         <section className="about-intro">
@@ -63,9 +70,14 @@ const About = () => {
         </section>
         <section className='about-animted-header'>
             <div className="container">
-                <span id='first-span'>empathic</span>
+                <Parallax translateX={['0px', '-400px']}>
+                    <span id='first-span'>empathic</span>
+                </Parallax>
+
                 <span>curious</span>
-                <span  id='last-span'>passionate</span>
+                <Parallax translateX={['0px', '400px']}>
+                    <span  id='last-span'>passionate</span>
+                </Parallax>
             </div>
         </section>
         <section className='about-details'>
@@ -73,9 +85,15 @@ const About = () => {
                 <div className="row">
                     <div className="col-lg-4 about-detail-animation" >
                         <p className='animated-detail-text'>
+{/*                         
                             <span id='first-text-span'>ui/ux design, figma, interaction design,</span>
                             <span id='second-text-span'>visual strategy, adobe suite, sketch, prototyping, </span>
                             <span id='third-text-span'>user research and testing, iterative design process</span>
+                         */}
+                            <ScrollText content={content} />
+
+                        
+                        
                         </p>
                     </div>
                     <div className="col-lg-4">

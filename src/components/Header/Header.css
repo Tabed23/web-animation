@@ -2,7 +2,7 @@
     filter: invert(1);
 }
 nav{
-    z-index: 999;
+    z-index: 5;
 }
 .navbar-expand-lg .navbar-collapse{
     justify-content: end;
@@ -18,7 +18,10 @@ nav{
     line-height: 160.023%;
 }
 
-
+.nav-link:hover{
+  /* color: darkgreen; */
+  /* mix-blend-mode: difference; */
+}
 .marquee {
     background: #e9c9fc;
     color: #000;
@@ -58,7 +61,7 @@ nav{
     align-items: center;
     justify-content: flex-start;
     overflow: hidden;
-    z-index: 99;
+    z-index: 3;
   }
   .marquee span {
     text-transform: uppercase;
