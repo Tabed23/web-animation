@@ -46,7 +46,13 @@
     top: 38%;
     left: 50%;
 }
+.anime-img.desktop-img{
+  display: block;
+}
 
+.anime-img.mobile-img{
+  display: none;
+}
 
 
 .home-intro-2{
@@ -271,13 +277,27 @@ margin-bottom: 0;
 }
 
 @media only screen and (max-width: 767px){
+    .home-intro {
+      height: calc(100vh - 446px);
+    }
     .home-intro p {
         font-size: 30px;
       }
       .anime-img {
-        max-width: 100px;
-        top: 33%;
-        left: 40%;
+        max-width: 30px;
+        top: -450px;
+        left: 46%;
+      }
+
+      .anime-img.desktop-img{
+        display: none;
+      }
+
+      .anime-img.mobile-img{
+        display: block;
+      }
+      .home-intro-2 {
+        height: calc(100vh - 525px);
       }
       .pages h3 {
         font-size: 25px;
