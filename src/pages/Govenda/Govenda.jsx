@@ -1,7 +1,8 @@
-import React from 'react'
+import React , {useEffect} from 'react'
 import './Govenda.css'
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
+import { useLocation } from "react-router-dom";
 
 
 import gov1 from '../../assets/images/ProductEcosystem.svg'
@@ -40,6 +41,17 @@ const doSpeicalThing = () =>{
 }
 
 const Govenda = () => {
+
+
+    const routePath = useLocation();
+    const onTop = () => {
+        window.scrollTo(0, 0);
+      }
+    useEffect(() => {
+        onTop()
+           
+        
+      }, [routePath]);
 
     const responsive = {
         superLargeDesktop: {
@@ -310,7 +322,7 @@ const Govenda = () => {
                     </div> 
                 </div>
                 
-            </Carousel>;
+            </Carousel>
         </section>
 
         <section className="gov-architect">

@@ -70,12 +70,12 @@ const About = () => {
         </section>
         <section className='about-animted-header'>
             <div className="container">
-                <Parallax translateX={['0px', '-400px']}>
+                <Parallax translateX={['0px', '-200px']}>
                     <span id='first-span'>empathic</span>
                 </Parallax>
 
                 <span>curious</span>
-                <Parallax translateX={['0px', '400px']}>
+                <Parallax translateX={['0px', '200px']}>
                     <span  id='last-span'>passionate</span>
                 </Parallax>
             </div>

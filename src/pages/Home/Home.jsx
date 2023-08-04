@@ -21,7 +21,7 @@ const Home = (props) => {
             opacity: 3, 
             y : 0,
             scale: 1,
-            transition: {duration: 0.7}
+            transition: {duration: 0.3}
         },
         hidden: {
             opacity: 3,
@@ -89,14 +89,14 @@ const Home = (props) => {
         
         <section className='home-intro-2'></section>
            
-        <section className="home-work">
+        <section className="home-work" id="work">
             <div className="container-lg">
                 <div className="row">
-                    <div className="col-lg-4">
+                    <div className="col-lg-6">
                         <h2 className='para'>Work</h2>
                         <p className='work-sec-para'>I enjoy creating great products with great people.</p>
                     </div>
-                    <div className="col-lg-8">
+                    <div className="col-lg-6">
                         <div className="pages" >
                             <motion.div className="page-tile govendapagetile " ref={ref}
                             variants={boxvariant}
@@ -106,11 +106,12 @@ const Home = (props) => {
                                     <div className="page-poster">
                                         <img src={home2} alt="" onMouseEnter={homeimgEnter} onMouseLeave={homeimgLeave} onClick={homeimgLeave}/>
                                     </div>
-                                </Link>
+                                
                                 <p className='page-pre-head'>Product Designer</p>
                                 <h3>Govenda Committee Suite</h3>
                                 <p className='page-para'>Led design for a new product, including product strategy, defining metrics and objectives, producing interactions and prototyping.</p>
-                                <a className='btn' href="#">EXPERIENCE DESIGN</a>
+                                <span className='btn' >EXPERIENCE DESIGN</span>
+                                </Link>
                             </motion.div>
                             <motion.div className="page-tile gptpagetile" ref={ref1}
                             variants={boxvariant}
@@ -120,15 +121,16 @@ const Home = (props) => {
                                     <div className="page-poster">
                                         <img src={home3} alt=""  onMouseEnter={homeimgEnter} onMouseLeave={homeimgLeave}  onClick={homeimgLeave}/>
                                     </div>
-                                </Link>
+                               
                                 <p className='page-pre-head'>Visual Designer</p>
                                 <h3>ChatGPT Reimagined</h3>
                                 <p className='page-para'>Crafting an experience that is intuitive, beautiful, and engaging to help people have better interactions with AI.</p>
                                 <div className="btn-holder">
-                                    <a className='btn' href="#">UI Design</a>
-                                    <a className='btn' href="#">Animation</a>
+                                    <span className='btn'>UI Design</span>
+                                    <span className='btn' >Animation</span>
 
                                 </div>
+                                </Link>
                             </motion.div>
                             <motion.div className="page-tile davispagetile" ref={ref2}
                                 variants={boxvariant}
@@ -138,15 +140,16 @@ const Home = (props) => {
                                     <div className="page-poster">
                                         <img src={home4} alt=""  onMouseEnter={homeimgEnter} onMouseLeave={homeimgLeave}  onClick={homeimgLeave}/>
                                     </div>
-                                </Link>
+                                
                                 <p className='page-pre-head'>UX Designer</p>
                                 <h3>Davis Housing</h3>
                                 <p className='page-para'>Designing the next generation search bar to drive product growth for a local consumer-facing service</p>
                                 <div className="btn-holder">
-                                    <a className='btn' href="#">UX Flow</a>
-                                    <a className='btn' href="#">Responsive Design</a>
+                                    <span className='btn'>UX Flow</span>
+                                    <span className='btn'>Responsive Design</span>
 
                                 </div>
+                                </Link>
                             </motion.div>
                         </div>
                         

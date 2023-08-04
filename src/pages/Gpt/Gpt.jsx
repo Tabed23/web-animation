@@ -1,5 +1,6 @@
-import React from 'react'
+import React , {useEffect} from 'react'
 import './Gpt.css'
+import { useLocation } from "react-router-dom";
 
 import gptlogo from '../../assets/images/ChatGPT_logo.svg'
 import gptbg from '../../assets/images/chatgptbg.svg'
@@ -13,7 +14,14 @@ import gptw from '../../assets/images/gptwhite.svg'
 import gptb from '../../assets/images/gptblack.svg'
 
 const Gpt = () => {
-    window.scrollTo({ top: 0, behavior: 'smooth' });
+    const routePath = useLocation();
+    const onTop = () => {
+        window.scrollTo(0, 0);
+      }
+    useEffect(() => {
+        onTop()
+      }, [routePath]);
+      
   return (
     <>
         <section className="gpt-intro">

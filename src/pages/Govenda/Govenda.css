@@ -4,7 +4,7 @@
     flex-direction: column;
     justify-content: center;
     /* align-items: center; */
-    margin-top: -67px;
+    /* margin-top: -67px; */
     color: #fff;
 }
 
@@ -19,7 +19,7 @@
     list-style: none;
     display: flex;
     flex-direction: column;
-    gap: 30px;
+    gap: 20px;
     color: #FFF;
     font-kerning: none;
     font-feature-settings: 'liga' off;
@@ -28,6 +28,10 @@
     font-style: normal;
     font-weight: 600;
     line-height: 160.023%; /* 35.205px */
+}
+
+.gov-intro-text ul p{
+    margin: 0;
 }
 
 .gov-intro svg{
@@ -48,7 +52,7 @@
     font-kerning: none;
     font-feature-settings: 'liga' off;
     font-family: Manrope;
-    font-size: 64px;
+    font-size: 40px;
     font-style: normal;
     font-weight: 600;
     line-height: 160%; /* 102.4px */
@@ -61,7 +65,7 @@
 
     /* Header 3 (32px) */
     font-family: Manrope;
-    font-size: 32px;
+    font-size: 24px;
     font-style: normal;
     font-weight: 500;
     line-height: 160.023%;
@@ -89,7 +93,7 @@
         font-kerning: none;
         font-feature-settings: 'liga' off;
         font-family: Manrope;
-        font-size: 64px;
+        font-size: 40px;
         font-style: normal;
         font-weight: 600;
         line-height: 160%; /* 102.4px */
@@ -113,7 +117,7 @@
         
         /* Header 3 (32px) */
         font-family: Manrope;
-        font-size: 32px;
+        font-size: 24px;
         font-style: normal;
         font-weight: 500;
         line-height: 160.023%;
@@ -137,7 +141,7 @@
         font-kerning: none;
         font-feature-settings: 'liga' off;
         font-family: Manrope;
-        font-size: 64px;
+        font-size: 40px;
         font-style: normal;
         font-weight: 800;
         line-height: 160.023%; /* 102.415px */
@@ -148,7 +152,7 @@
         font-kerning: none;
         font-feature-settings: 'liga' off;
         font-family: Manrope;
-        font-size: 50px;
+        font-size: 38px;
         font-style: normal;
         font-weight: 500;
         line-height: 160.023%; /* 80.011px */
@@ -177,7 +181,7 @@
         font-kerning: none;
         font-feature-settings: 'liga' off;
         font-family: Manrope;
-        font-size: 64px;
+        font-size: 40px;
         font-style: normal;
         font-weight: 600;
         line-height: 128%; /* 81.92px */
@@ -210,7 +214,7 @@
         font-kerning: none;
         font-feature-settings: 'liga' off;
         font-family: Manrope;
-        font-size: 40px;
+        font-size: 30px;
         font-style: normal;
         font-weight: 600;
         line-height: 160.023%;
@@ -226,7 +230,7 @@
         font-kerning: none;
         font-feature-settings: 'liga' off;
         font-family: Manrope;
-        font-size: 64px;
+        font-size: 40px;
         font-style: normal;
         font-weight: 600;
         line-height: 160%; /* 102.4px */
@@ -285,7 +289,7 @@
 
         /* Header 3 (32px) */
         font-family: Manrope;
-        font-size: 32px;
+        font-size: 24px;
         font-style: normal;
         font-weight: 500;
         line-height: 160.023%; /* 51.207px */
@@ -336,7 +340,7 @@
         font-kerning: none;
         font-feature-settings: 'liga' off;
         font-family: Manrope;
-        font-size: 64px;
+        font-size: 40px;
         font-style: normal;
         font-weight: 600;
         line-height: 160%; /* 102.4px */
@@ -373,7 +377,7 @@
 
         /* Header 3 (32px) */
         font-family: Manrope;
-        font-size: 32px;
+        font-size: 24px;
         font-style: normal;
         font-weight: 500;
         line-height: 160.023%; /* 51.207px */
@@ -384,7 +388,7 @@
         color: #007F84;
         font-kerning: none;
         font-feature-settings: 'liga' off;
-        font-size: 32px;
+        font-size: 24px;
         font-style: italic;
         font-weight: 600;
         line-height: 160.023%;
@@ -403,7 +407,7 @@
         
         /* Header 3 (32px) */
         font-family: Manrope;
-        font-size: 32px;
+        font-size: 24px;
         font-style: normal;
         font-weight: 500;
         line-height: 160.023%; /* 51.207px */
@@ -427,7 +431,7 @@
         font-kerning: none;
         font-feature-settings: 'liga' off;
         font-family: Manrope;
-        font-size: 64px;
+        font-size: 40px;
         font-style: normal;
         font-weight: 600;
         line-height: 126.5%; /* 80.96px */
@@ -522,7 +526,7 @@
     font-kerning: none;
     font-feature-settings: 'liga' off;
     font-family: Manrope;
-    font-size: 64px;
+    font-size: 40px;
     font-style: normal;
     font-weight: 600;
     line-height: 124.5%; /* 79.68px */
@@ -613,7 +617,7 @@
 
     /* Header 3 (32px) */
     font-family: Manrope;
-    font-size: 32px;
+    font-size: 24px;
     font-style: normal;
     font-weight: 500;
     line-height: 160.023%; /* 51.207px */
@@ -625,14 +629,12 @@
     font-kerning: none;
     font-feature-settings: 'liga' off;
     font-family: Manrope;
-    font-size: 32px;
+    font-size: 24px;
     font-style: normal;
     font-weight: 600;
     line-height: 160.023%;
     text-decoration-line: underline;
-    display: flex;
-    align-items: center;
-    gap: 10px;
+    
 }
 
 .gov-takeaway{
@@ -645,7 +647,7 @@
     font-kerning: none;
     font-feature-settings: 'liga' off;
     font-family: Manrope;
-    font-size: 64px;
+    font-size: 40px;
     font-style: normal;
     font-weight: 600;
     line-height: 138.5%; /* 88.64px */
@@ -659,7 +661,7 @@
 
     /* Header 3 (32px) */
     font-family: Manrope;
-    font-size: 32px;
+    font-size: 24px;
     font-style: normal;
     font-weight: 500;
     line-height: 160.023%; /* 51.207px */
@@ -674,7 +676,7 @@
 
     /* Header 3 (32px) */
     font-family: Manrope;
-    font-size: 32px;
+    font-size: 24px;
     font-style: normal;
     font-weight: 500;
     line-height: 160.023%; /* 51.207px */
@@ -691,6 +693,27 @@
         font-size: 103px;
       }
 
+      .gov-persona .react-multi-carousel-item {
+        padding: 0 27.5px;
+      }
+      .persona-slide {
+        padding: 30px 36px;
+      }
+      .persona-slide h3 {
+        font-size: 40px;
+      }
+      .persona-slide p.persona-header {
+        font-size: 19px;
+      }
+      .persona-slide p {
+        font-size: 16px;
+        margin-bottom: 40px;
+      }
+      .gov-persona .persona-img {
+        margin-bottom: 36px;
+      }
+      
+      
 }
 
 @media only screen and (max-width: 1200px){

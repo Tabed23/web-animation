@@ -21,7 +21,7 @@ a{
     font-kerning: none;
     font-feature-settings: 'liga' off;
     font-family: Manrope;
-    font-size: 40px;
+    font-size: 28px;
     font-style: normal;
     font-weight: 700;
     line-height: 160%; /* 64px */
@@ -55,10 +55,10 @@ a{
     font-kerning: none;
     font-feature-settings: 'liga' off;
     font-family: Manrope;
-    font-size: 32px;
+    font-size: 21px;
     font-style: normal;
     font-weight: 500;
-    line-height: 160%; /* 51.2px */
+    line-height: 130%;
 }
 
 .cursor{
