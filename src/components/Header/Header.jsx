@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import logo from '../../assets/images/NJ.svg';
 import './Header.css';
 import { Link } from 'react-router-dom'
@@ -34,18 +34,18 @@ const Header = (props) => {
         
         <div className="collapse navbar-collapse" id="navbarNav">
           <ul className="navbar-nav">
-            <li className="nav-item"  onMouseOver={()=> setwork(!work)} onMouseOut={()=> setwork(!work)}>
-              <a className="nav-link" aria-current="page" href="/" onMouseEnter={navlinkEnter} onMouseLeave={navLinkLeave}>
+            <li className="nav-item"  onMouseOver={()=> setwork(true)} onMouseOut={()=> setwork(false)}>
+              <a className="nav-link" aria-current="page" href="/#work" onMouseEnter={navlinkEnter} onMouseLeave={navLinkLeave} onClick={()=> setwork(false)}>
                 WORK
               </a>
             </li>
-            <li className="nav-item" onMouseOver={()=> setabout(!about)} onMouseOut={()=> setabout(!about)}>
-              <Link className="nav-link" to={"/about"} onMouseEnter={navlinkEnter} onMouseLeave={navLinkLeave}>
+            <li className="nav-item" onMouseOver={()=> setabout(true)} onMouseOut={()=> setabout(false)}>
+              <Link className="nav-link" to={"/about"} onMouseEnter={navlinkEnter} onMouseLeave={navLinkLeave} onClick={()=> setabout(false)}>
                 ABOUT
               </Link>
             </li>
-            <li className="nav-item " onMouseOver={()=> setplay(!play)} onMouseOut={()=> setplay(!play)}>
-              <Link className="nav-link" to={"/play"} onMouseEnter={navlinkEnter} onMouseLeave={navLinkLeave}>
+            <li className="nav-item " onMouseOver={()=> setplay(true)} onMouseOut={()=> setplay(false)}>
+              <Link className="nav-link" to={"/play"} onMouseEnter={navlinkEnter} onMouseLeave={navLinkLeave} onClick={()=> setplay(false)}>
                 PLAY
               </Link>
             </li>

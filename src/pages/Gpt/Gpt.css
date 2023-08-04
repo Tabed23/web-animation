@@ -300,7 +300,7 @@
 
         /* Header 3 (32px) */
         font-family: Manrope;
-        font-size: 32px;
+        font-size: 24px;
         font-style: normal;
         font-weight: 500;
         line-height: 160.023%; /* 51.207px */
@@ -315,7 +315,7 @@
         color: #007F84;
         font-kerning: none;
         font-feature-settings: 'liga' off;
-        font-size: 20px;
+        font-size: 16px;
         font-weight: 500;
         line-height: 160.023%; /* 32.005px */
     }
@@ -326,7 +326,7 @@
         font-kerning: none;
         font-feature-settings: 'liga' off;
         font-family: Manrope;
-        font-size: 32px;
+        font-size: 24px;
         font-style: normal;
         font-weight: 600;
         line-height: 134%; /* 42.88px */

@@ -13,7 +13,7 @@
     font-kerning: none;
     font-feature-settings: 'liga' off;
     font-family: Manrope;
-    font-size: 120px;
+    font-size: 80px;
     font-style: normal;
     font-weight: 300;
     line-height: 1;
@@ -71,7 +71,7 @@
 .home-work:before{
     content: '';
     width: 100%;
-    height: 1890px;
+    height: 1490px;
     position: absolute;
     top: 0;
     left: 0;
@@ -82,7 +82,7 @@
     font-kerning: none;
     font-feature-settings: 'liga' off;
     font-family: Manrope;
-    font-size: 96px;
+    font-size: 70px;
     font-style: normal;
     font-weight: 800;
     line-height: 160%; /* 153.6px */
@@ -94,7 +94,7 @@
     font-kerning: none;
     font-feature-settings: 'liga' off;
     font-family: Manrope;
-    font-size: 28px;
+    font-size: 21px;
     font-style: normal;
     font-weight: 600;
     line-height: 160%;
@@ -118,7 +118,7 @@ p.page-pre-head{
     font-kerning: none;
     font-feature-settings: 'liga' off;
     font-family: Manrope;
-    font-size: 38px;
+    font-size: 30px;
     font-style: normal;
     font-weight: 400;
     line-height: 160%; /* 60.8px */
@@ -131,14 +131,14 @@ p.page-pre-head{
 
 .pages h3 {
     color: #000;
-font-kerning: none;
-font-feature-settings: 'liga' off;
-font-family: Manrope;
-font-size: 46px;
-font-style: normal;
-font-weight: 800;
-line-height: 160%; /* 73.6px */
-margin-bottom: 0;
+    font-kerning: none;
+    font-feature-settings: 'liga' off;
+    font-family: Manrope;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 160%; /* 73.6px */
+    margin-bottom: 0;
 }
 
 .page-para{
@@ -153,16 +153,16 @@ margin-bottom: 0;
     margin-bottom: 24px;
 }
 
-.govendapagetile a.btn{
+.govendapagetile .btn{
     color: #760FB5;
     font-kerning: none;
-    font-feature-settings: 'liga' off;
+    font-feature-settings: 'liga' off, "kern" off;
     font-family: Manrope;
-    font-size: 32px;
+    font-size: 21px;
     font-style: normal;
     font-weight: 400;
-    line-height: 160%; /* 51.2px */
-    padding: 17px 47px;
+    line-height: 160%;
+    padding: 12px 24px;
     /* display: flex; */
     background: rgba(229, 193, 251, 0.70); 
     text-decoration: none;
@@ -175,16 +175,16 @@ margin-bottom: 0;
 .gptpagetile p.page-para, .davispagetile p.page-para{
     color: #000 !important;
 }
-.gptpagetile a.btn{
+.gptpagetile .btn{
     color: #007F84;
     font-kerning: none;
-    font-feature-settings: 'liga' off;
+    font-feature-settings: 'liga' off, "kern" off;
     font-family: Manrope;
-    font-size: 32px;
+    font-size: 21px;
     font-style: normal;
     font-weight: 400;
-    line-height: 160%; /* 51.2px */
-    padding: 17px 47px;
+    line-height: 160%;
+    padding: 12px 24px;
     /* display: flex; */
     background: rgba(170, 221, 208, 0.60); 
         text-decoration: none;
@@ -195,16 +195,16 @@ margin-bottom: 0;
     gap: 13px;
 }
 
-.davispagetile a.btn{
+.davispagetile .btn{
     color: #0357CB;
     font-kerning: none;
     font-feature-settings: 'liga' off;
     font-family: Manrope;
-    font-size: 32px;
+    font-size: 21px;
     font-style: normal;
     font-weight: 400;
     line-height: 160%; /* 51.2px */
-    padding: 17px 47px;
+    padding: 12px 24px;
     /* display: flex; */
     background: rgba(102, 141, 195, 0.30);
             text-decoration: none;
@@ -212,7 +212,7 @@ margin-bottom: 0;
 
 
 .work-sec-para{
-    max-width: 350px;
+  max-width: 246px;
 }
 
 .davispagetile .page-poster{
@@ -225,10 +225,10 @@ margin-bottom: 0;
 @media only screen and (max-width: 1440px){
 
     .home-work::before {
-        height: 1721px;
+        height: 1369px;
     }
     .home-intro p {
-        font-size: 90px;
+        font-size: 70px;
     }
     .anime-img {
         max-width: 180px;

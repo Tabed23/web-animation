@@ -1,10 +1,19 @@
-import React from 'react'
+import React , {useEffect} from 'react'
 import './Davis.css'
+import { useLocation } from "react-router-dom";
 
 import davis from '../../assets/images/DavisHousing2.svg'
 
 const Davis = () => {
-   
+    const routePath = useLocation();
+    const onTop = () => {
+        window.scrollTo(0, 0);
+      }
+    useEffect(() => {
+        onTop()
+           
+        
+      }, [routePath]);
   return (
     <>
         <section className="dav-intro">
