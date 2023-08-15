@@ -40,7 +40,7 @@
 
 
 .anime-img{
-    max-width: 230px;
+    max-width: 145px;
     position: absolute;
     z-index: 1;
     top: 38%;
@@ -231,7 +231,7 @@ p.page-pre-head{
         font-size: 70px;
     }
     .anime-img {
-        max-width: 180px;
+      max-width: 150px;
         top: 33%;
         left: 46%;
     }

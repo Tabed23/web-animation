@@ -17,7 +17,7 @@
     font-style: normal;
     font-weight: 600;
     line-height: 160.023%; /* 102.415px */
-    margin-bottom: 79px;
+    margin-bottom: 42px;
 }
 
 
@@ -45,7 +45,9 @@
     font-weight: 600;
     line-height: 160.023%; /* 35.205px */
 }
-
+.dav-intro-text  ul p{
+    margin: 0;
+}
 .dav-intro svg{
     margin-right: 14px;
     margin-bottom: 42px;
@@ -66,7 +68,7 @@
        font-kerning: none;
        font-feature-settings: 'liga' off;
        font-family: Manrope;
-       font-size: 64px;
+       font-size: 40px;
        font-style: normal;
        font-weight: 600;
        line-height: 160%; /* 102.4px */
@@ -79,7 +81,7 @@
    
        /* Header 3 (32px) */
        font-family: Manrope;
-       font-size: 32px;
+       font-size: 24px;
        font-style: normal;
        font-weight: 500;
        line-height: 160.023%;

@@ -76,7 +76,7 @@ const Home = (props) => {
              <span className='home-pd'>PRODUCT DESIGNER</span>
              <span className='home-port'>PORTFOLIO</span>
                 <span className='anime-img desktop-img' id='anime-img'>
-                    <Parallax translateY={[-522, 522]} scale={[0.9, 1.3]} speed={1000}>
+                    <Parallax translateY={[-622, 622]} scale={[0.9, 1.3]} speed={1000}>
                         <img src={home1} alt="" />
                     </Parallax>
                 </span>

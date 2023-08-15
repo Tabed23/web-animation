@@ -284,7 +284,10 @@ const Govenda = () => {
                 <h2>User Personas</h2>
             </div>
             <Carousel responsive={responsive} arrows={false} keyBoardControl={true} centerMode={true}
-                afterChange={(previousSlide, { currentSlide, onMove }) => {doSpeicalThing()}}>
+                afterChange={(previousSlide, { currentSlide, onMove }) => {doSpeicalThing()}}
+                
+                autoPlay={true}
+  autoPlaySpeed={5000}>
                 <div>
                     <div className="persona-slide">
                         <h3>Meet Fatima</h3>
@@ -302,7 +305,7 @@ const Govenda = () => {
                         <h3>Meet Sarah</h3>
                         <p className='persona-header'>31, Compliance Officer, Experienced in ensuring compliance</p>
                         <div className="persona-img">
-                            <img src={gov3} alt="" />
+                            <img src={gov4} alt="" />
                         </div>
                         <p>
                         As a compliance officer, Sarah wants to ensure that all committees are complying with regulations and policies. With Govenda's Committees feature, Sarah can track tasks and deadlines assigned to committee members, ensure that all members are aware of their responsibilities, and access reports to identify areas for improvement. This helps her to reduce the risk of non-compliance and ensure that the organization is meeting its obligations.</p>
@@ -314,7 +317,7 @@ const Govenda = () => {
                         <h3>Meet Tom</h3>
                         <p className='persona-header'>48, Committee Chair, Experienced in managing committees</p>
                         <div className="persona-img">
-                            <img src={gov4} alt="" />
+                            <img src={gov3} alt="" />
                         </div>
                         <p>
                         As a committee chair, Tom wants to be able to schedule meetings, create agendas, assign tasks, and track progress efficiently. With Govenda's Committees feature, Tom can easily create and share meeting agendas, assign tasks to committee members, and track progress of those tasks. This helps him to ensure that committee meetings are productive and that tasks are completed on time.</p>

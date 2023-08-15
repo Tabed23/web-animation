@@ -440,7 +440,7 @@
 
     .persona-slide{
         background: rgba(48, 50, 68, 0.06);
-        padding: 60px 72px; 
+        padding: 40px; 
         min-width: 50%;
     }
     
@@ -449,7 +449,7 @@
         font-kerning: none;
         font-feature-settings: 'liga' off;
         font-family: Manrope;
-        font-size: 64px;
+        font-size: 40px;
         font-style: normal;
         font-weight: 600;
         line-height: 126.5%; /* 80.96px */
@@ -462,11 +462,11 @@
 
         /* Header 3 (32px) */
         font-family: Manrope;
-        font-size: 32px;
+        font-size: 18px;
         font-style: normal;
         font-weight: 500;
         line-height: 160.023%; /* 51.207px */
-        margin-bottom: 89px;
+        margin-bottom: 30px;
     }
 
     .persona-slide p:last-child{
@@ -745,4 +745,13 @@
         font-size: 50px;
       }
       
+}
+
+
+.gov-persona{
+    padding-bottom: 50px;
+    user-select: none; 
+    -moz-user-select: none; 
+    -webkit-text-select: none; 
+    -webkit-user-select: none; 
 }

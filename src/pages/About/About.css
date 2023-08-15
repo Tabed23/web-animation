@@ -222,7 +222,7 @@
         min-height: auto;
         display: flex;
         flex-direction: column;
-        justify-content: start;
+        justify-content: flex-start;
         gap: 50px;
 
       }
@@ -264,4 +264,20 @@
       .about-detail-tile {
         padding: 0;
       }
+}
+
+
+.animatedtextcontainer1, .animatedtextcontainer2, .animatedtextcontainer3{
+  position: relative;
+}
+
+span.animatedtext1 , span.animatedtext2, span.animatedtext3{
+  color: white;
+  position: absolute;
+  top: 0;
+  left:0;
+  width: 0%;
+  overflow: hidden;
+  white-space: nowrap;
+  transition: all 0.3s ease-in-out;
 }

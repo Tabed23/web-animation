@@ -223,7 +223,7 @@ const Gpt = () => {
                 <span>PROCESS</span>
                 <h2>Error Handling through Error Messages, Feedback Loop and Alternatives</h2>
                 <p>I focused on error handling that are not based on informational load or training data to limit the scope of this project. </p>
-                <p className='mb-5'>Different types of error messages:</p>
+                <p className='mb-3'>Different types of error messages:</p>
                 <ul>
                     <li>
                     Misunderstands a message due to ambiguity                        
@@ -261,7 +261,7 @@ const Gpt = () => {
                     </div>
                 </div>
                 
-                <p className='mb-5'>This is what I added:</p>
+                <p className='mb-3'>This is what I added:</p>
                 <ul>
                     <li>
                     Light Theme Update                    </li>

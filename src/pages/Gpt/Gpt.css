@@ -4,7 +4,7 @@
     flex-direction: column;
     justify-content: center;
     /* align-items: center; */
-    margin-top: -67px;
+    /* margin-top: -67px; */
     color: #fff;
 }
 
@@ -17,7 +17,7 @@
     font-style: normal;
     font-weight: 600;
     line-height: 160.023%; /* 102.415px */
-    margin-bottom: 79px;
+    margin-bottom: 42px;
 }
 
 
@@ -42,6 +42,9 @@
     line-height: 160.023%; /* 35.205px */
 }
 
+.gpt-intro-text ul p {
+  margin: 0;
+}
 .gpt-intro svg{
     margin-right: 14px;
     margin-bottom: 42px;
@@ -62,7 +65,7 @@
        font-kerning: none;
        font-feature-settings: 'liga' off;
        font-family: Manrope;
-       font-size: 64px;
+       font-size: 40px;
        font-style: normal;
        font-weight: 600;
        line-height: 160%; /* 102.4px */
@@ -75,7 +78,7 @@
    
        /* Header 3 (32px) */
        font-family: Manrope;
-       font-size: 32px;
+       font-size: 24px;
        font-style: normal;
        font-weight: 500;
        line-height: 160.023%;
@@ -97,7 +100,7 @@
         font-kerning: none;
         font-feature-settings: 'liga' off;
         font-family: Manrope;
-        font-size: 64px;
+        font-size: 40px;
         font-style: normal;
         font-weight: 600;
         line-height: 160%; /* 102.4px */
@@ -121,7 +124,7 @@
         font-kerning: none;
         font-feature-settings: 'liga' off;
         font-family: Manrope;
-        font-size: 50px;
+        font-size: 32px;
         font-style: normal;
         font-weight: 600;
         line-height: 101%; /* 50.5px */
@@ -134,7 +137,7 @@
 
         /* Header 3 (32px) */
         font-family: Manrope;
-        font-size: 32px;
+        font-size: 24px;
         font-style: normal;
         font-weight: 500;
         line-height: 160.023%; /* 51.207px */
@@ -243,7 +246,7 @@
         font-kerning: none;
         font-feature-settings: 'liga' off;
         font-family: Manrope;
-        font-size: 64px;
+        font-size: 40px;
         font-style: normal;
         font-weight: 600;
         line-height: 160%; /* 102.4px */
@@ -339,7 +342,7 @@
     font-feature-settings: 'liga' off;
     /* Header 3 (32px) */
     font-family: Manrope;
-    font-size: 32px;
+    font-size: 24px;
     font-style: normal;
     font-weight: 500;
     line-height: 160.023%; /* 51.207px */
@@ -370,7 +373,7 @@
     font-kerning: none;
     font-feature-settings: 'liga' off;
     font-family: Manrope;
-    font-size: 64px;
+    font-size: 40px;
     font-style: normal;
     font-weight: 600;
     line-height: 124.5%; /* 79.68px */
@@ -404,7 +407,7 @@
 
     /* Header 3 (32px) */
     font-family: Manrope;
-    font-size: 32px;
+    font-size: 24px;
     font-style: normal;
     font-weight: 500;
     line-height: 160.023%; /* 51.207px */
@@ -429,11 +432,11 @@
     font-feature-settings: 'liga' off;
     /* Header 3 (32px) */
     font-family: Manrope;
-    font-size: 32px;
+    font-size: 24px;
     font-style: normal;
     font-weight: 500;
     line-height: 160.023%; /* 51.207px */
-    margin-bottom: 103px;
+    margin-bottom: 50px;
     padding: 0;
     background-color: transparent;
 }
@@ -449,11 +452,11 @@
     font-feature-settings: 'liga' off;
     /* Header 3 (32px) */
     font-family: Manrope;
-    font-size: 32px;
+    font-size: 24px;
     font-style: normal;
     font-weight: 500;
     line-height: 160.023%; /* 51.207px */
-    margin-bottom: 47px;
+    margin-bottom: 10px;
 }
 .gpt-architect.second-architect ul ul{
     padding: 0;

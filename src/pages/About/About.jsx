@@ -1,59 +1,117 @@
-import React from 'react'
+import React , {useState, useEffect, useRef}from 'react'
 import './About.css'
-import { useLocation} from 'react-router-dom'
-import { Parallax, ParallaxBanner, ParallaxBannerLayer } from 'react-scroll-parallax';
-import { ScrollText } from "../Scrolltext/ScrollText";
+import { Parallax } from 'react-scroll-parallax';
 
 import asset1 from '../../assets/images/detailtile1.svg'
 import asset2 from '../../assets/images/detailtile2.svg'
 import asset3 from '../../assets/images/detailtile3.svg'
 
 const About = () => {
-    // window.onscroll = () => {
-        
-    //     var scrolltop  = window.pageYOffset || document.documentElement.scrollTop
-    //     const item =  document.getElementById('first-span')
-    //     const item2 =  document.getElementById('last-span')
-    //     const item3 =  document.getElementById('first-text-span')
-    //     const item4 =  document.getElementById('second-text-span')
-    //     const item5 =  document.getElementById('third-text-span')
-    //     // var w = window.innerWidth;
-    //     var temp  = scrolltop
-    //     if(scrolltop > 518){
-    //         item.style.transform = 'translatex(-20%)' ;
-    //         item2.style.transform = 'translatex(20%)' ;
-    //     }
-    //     else{
-    //         item.style.transform = 'unset' ;
-    //         item2.style.transform = 'unset' ;
+   
+    const [scroll, setScroll] = useState(0)
+    const [scroll1, setScroll1] = useState(0)
+    const [scroll2, setScroll2] = useState(0)
+      const ref = useRef(null)
+        useEffect(() => {
+            window.addEventListener("scroll", handleScroll);
+            return () => window.removeEventListener("scroll", handleScroll);
+        }, [scroll])
 
-    //     }
-
-    //     if(scrolltop > 1100 && scrolltop < 2000){
-    //         item3.style.backgroundPosition = '0 100%' ;
-    //         item4.style.backgroundPosition = '100%' ;
-    //         item5.style.backgroundPosition = '100%' ;
-
-    //     }else if (scrolltop > 2000 && scrolltop < 2500){
-    //         item3.style.backgroundPosition = '100%' ;
-    //         item4.style.backgroundPosition = '0 100%' ;
-    //         item5.style.backgroundPosition = '100%' ;
-    //     }
-    //     else if (scrolltop > 2500){
-    //         item3.style.backgroundPosition = '100%' ;
-    //         item4.style.backgroundPosition = '100%' ;
-    //         item5.style.backgroundPosition = '0 100%' ;
-    //     }
-    
-        
-        
-    // }
-    const content = [
-        "ui/ux design, figma, interaction design,",
-        "visual strategy, adobe suite, sketch, prototyping, ",
-        "user research and testing, iterative design process"
-      ];
-      
+        function handleScroll() {
+            let yScroll = window.scrollY;
+            if(window.innerWidth<1930 && window.innerWidth > 1440){
+                console.log(document.documentElement.offsetHeight)
+                if(yScroll > ref.current.clientHeight+500 && yScroll < ref.current.clientHeight+1700){
+                    setScroll((yScroll/document.documentElement.offsetHeight)*200)
+                    setScroll1(0)
+                    setScroll2(0)
+                }
+                else if (yScroll > ref.current.clientHeight+1700 && yScroll < ref.current.clientHeight+2500){
+                    setScroll(0)
+                    setScroll2(0)
+                    setScroll1((yScroll/document.documentElement.offsetHeight)*200)
+                }
+                else if (yScroll > ref.current.clientHeight+2500 && yScroll < ref.current.clientHeight+3000){
+                    setScroll(0)
+                    setScroll1(0)
+                    setScroll2((yScroll/document.documentElement.offsetHeight)*200)
+                }
+                else{
+                    setScroll(0)
+                    setScroll1(0)
+                    setScroll2(0)
+                }
+            }
+            else if(window.innerWidth<1440 && window.innerWidth > 1200){
+                console.log(document.documentElement.offsetHeight)
+                if(yScroll > ref.current.clientHeight+500 && yScroll < ref.current.clientHeight+1300){
+                    setScroll((yScroll/document.documentElement.offsetHeight)*200)
+                    setScroll1(0)
+                    setScroll2(0)
+                }
+                else if (yScroll > ref.current.clientHeight+1300 && yScroll < ref.current.clientHeight+2200){
+                    setScroll(0)
+                    setScroll2(0)
+                    setScroll1((yScroll/document.documentElement.offsetHeight)*200)
+                }
+                else if (yScroll > ref.current.clientHeight+2200 && yScroll < ref.current.clientHeight+2700){
+                    setScroll(0)
+                    setScroll1(0)
+                    setScroll2((yScroll/document.documentElement.offsetHeight)*200)
+                }
+                else{
+                    setScroll(0)
+                    setScroll1(0)
+                    setScroll2(0)
+                }
+            }
+            else if(window.innerWidth<1200 && window.innerWidth > 900){
+                console.log(document.documentElement.offsetHeight)
+                if(yScroll > ref.current.clientHeight+500 && yScroll < ref.current.clientHeight+1300){
+                    setScroll((yScroll/document.documentElement.offsetHeight)*200)
+                    setScroll1(0)
+                    setScroll2(0)
+                }
+                else if (yScroll > ref.current.clientHeight+1300 && yScroll < ref.current.clientHeight+2200){
+                    setScroll(0)
+                    setScroll2(0)
+                    setScroll1((yScroll/document.documentElement.offsetHeight)*200)
+                }
+                else if (yScroll > ref.current.clientHeight+2200 && yScroll < ref.current.clientHeight+2700){
+                    setScroll(0)
+                    setScroll1(0)
+                    setScroll2((yScroll/document.documentElement.offsetHeight)*200)
+                }
+                else{
+                    setScroll(0)
+                    setScroll1(0)
+                    setScroll2(0)
+                }
+            }
+            else if(window.innerWidth<900 && window.innerWidth > 767){
+                console.log(document.documentElement.offsetHeight)
+                if(yScroll > ref.current.clientHeight && yScroll < ref.current.clientHeight+100){
+                    setScroll((yScroll/document.documentElement.offsetHeight)*200)
+                    setScroll1(0)
+                    setScroll2(0)
+                }
+                else if (yScroll > ref.current.clientHeight+100 && yScroll < ref.current.clientHeight+150){
+                    setScroll(0)
+                    setScroll2(0)
+                    setScroll1((yScroll/document.documentElement.offsetHeight)*200)
+                }
+                else if (yScroll > ref.current.clientHeight+150 && yScroll < ref.current.clientHeight+200){
+                    setScroll(0)
+                    setScroll1(0)
+                    setScroll2((yScroll/document.documentElement.offsetHeight)*200)
+                }
+                else{
+                    setScroll(0)
+                    setScroll1(0)
+                    setScroll2(0)
+                }
+            }
+        }
   return (
     <>
         <section className="about-intro">
@@ -61,14 +119,14 @@ const About = () => {
                 <p>
                     Hi! I’m Nehal, a product designer invested in creating a more <em>equitable world</em> and designing fore <em>human well being.</em> 
                 </p>
-                <a href="#">Resume &#8594;</a>
+                <a href="/">Resume &#8594;</a>
                 <div className="about-border-text">
                     <p><strong>MY DESIGN PHILOSOPHY</strong></p>
                     <p>I am determined to leave the industry better than I found it.</p>
                 </div>
             </div>
         </section>
-        <section className='about-animted-header'>
+        <section className='about-animted-header' ref={ref}>
             <div className="container">
                 <Parallax translateX={['0px', '-200px']}>
                     <span id='first-span'>empathic</span>
@@ -84,17 +142,20 @@ const About = () => {
             <div className="container-fluid">
                 <div className="row">
                     <div className="col-lg-4 about-detail-animation" >
-                        <p className='animated-detail-text'>
-{/*                         
-                            <span id='first-text-span'>ui/ux design, figma, interaction design,</span>
-                            <span id='second-text-span'>visual strategy, adobe suite, sketch, prototyping, </span>
-                            <span id='third-text-span'>user research and testing, iterative design process</span>
-                         */}
-                            <ScrollText content={content} />
-
-                        
-                        
-                        </p>
+                        <div className='animated-detail-text'>
+                            <div className="animatedtextcontainer1">
+                                <span>ui/ux design, figma, <br /> interaction design,</span>
+                                <span className='animatedtext1' style={{width: `${scroll}%`}}>ui/ux design, figma, <br /> interaction design,</span>
+                            </div>
+                            <div className="animatedtextcontainer2">
+                                <span>interaction design, <br /> visual strategy, adobe  <br /> suite, sketch, prototyping,</span>
+                                <span className='animatedtext2' style={{width: `${scroll1}%`}}>interaction design, <br /> visual strategy, adobe  <br /> suite, sketch, prototyping,</span>
+                            </div>
+                            <div className="animatedtextcontainer3">
+                                <span>user research and <br /> testing, iterative design <br /> process</span>
+                                <span className='animatedtext3' style={{width: `${scroll2}%`}}>user research and <br /> testing, iterative design <br /> process</span>
+                            </div>
+                        </div>
                     </div>
                     <div className="col-lg-4">
                         <div className="about-detail-tiles">
